@@ -2,9 +2,9 @@
 
 namespace RhysLees\ArtisanMakeExtended;
 
+use RhysLees\ArtisanMakeExtended\Commands\ArtisanMakeExtendedCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RhysLees\ArtisanMakeExtended\Commands\ArtisanMakeExtendedCommand;
 
 class ArtisanMakeExtendedServiceProvider extends PackageServiceProvider
 {
