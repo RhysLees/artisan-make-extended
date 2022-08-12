@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace RhysLees\ArtisanMakeExtended;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use RhysLees\ArtisanMakeExtended\Commands\ArtisanMakeExtendedCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class ArtisanMakeExtendedServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('artisan-make-extended')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_artisan-make-extended_table')
+            ->hasCommand(ArtisanMakeExtendedCommand::class);
     }
 }
